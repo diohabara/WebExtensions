@@ -77,3 +77,4 @@ function reportExecuteScriptError(error) {
 browser.tabs.executeScript({ file: "/content_scripts/beastify.js" })
     .then(listenForClicks)
     .catch(reportExecuteScriptError);
+
