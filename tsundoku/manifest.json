@@ -1,23 +1,22 @@
 {
+    "author": "diohabara",
     "manifest_version": 2,
-    "name": "Beastify",
+    "name": "Tsundoku",
     "version": "1.0",
-    "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
-    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+    "description": "Manager of books you are reading. Show hom many books you are reading, and how long have you read them. All you have to do is just click bottuns and type a name of your books, and you can make your own tsundoku list.",
+    "homepage_url": "https://github.com/diohabara/firefoxWebExtensions/tsundoku",
     "icons": {
-        "48": "icons/beasts-48.png"
+        "48": "icons/book.png"
     },
     "permissions": [
-        "activeTab"
+        "background"
     ],
+    "background": {
+        "scripts": ["background.js"]
+    },
     "browser_action": {
         "default_icon": "icons/book.png",
-        "default_title": "Beastify",
-        "default_popup": "popup/choose_beast.html"
-    },
-    "web_accessible_resources": [
-        "beasts/frog.jpg",
-        "beasts/turtle.jpg",
-        "beasts/snake.jpg"
-    ]
+        "default_title": "Tsundoku",
+        "default_popup": "popup/tsundoku_list.html"
+    }
 }
