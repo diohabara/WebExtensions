@@ -1,4 +1,4 @@
-# Firefox WebExtensions
+# WebExtensions
 
 ## beastify & borderify
 
